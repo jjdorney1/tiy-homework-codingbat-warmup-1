@@ -45,8 +45,8 @@
           <file leaf-file-name="Kata.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Kata.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
+                <state relative-caret-position="418">
+                  <caret line="143" column="5" selection-start-line="135" selection-start-column="8" selection-end-line="143" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -608,12 +608,12 @@
       <option name="presentableId" value="Default" />
       <updated>1470666262359</updated>
       <workItem from="1470666263631" duration="8587000" />
-      <workItem from="1470682240646" duration="499000" />
+      <workItem from="1470682240646" duration="573000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9086000" />
+    <option name="totallyTimeSpent" value="9160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1366" height="741" extended-state="6" />
@@ -694,8 +694,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Kata.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="131" column="5" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
+        <state relative-caret-position="418">
+          <caret line="143" column="5" selection-start-line="135" selection-start-column="8" selection-end-line="143" selection-end-column="5" />
           <folding />
         </state>
       </provider>
