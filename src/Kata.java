@@ -131,6 +131,18 @@ public class Kata {
         }
     }
 
+    public String frontBack(String str) {
+
+        // checks the length to see if it's one character (0 or 1)
+        if(str.length() <= 1) return str;
+
+        // sets the middle of the string to a mid String
+        String mid = str.substring(1, str.length()-1);
+
+        // returns the last character then the middle then the first character
+        return str.charAt(str.length()-1) + mid + str.charAt(0);
+    }
+
     /*
 
     public String frontBack(String str) {
