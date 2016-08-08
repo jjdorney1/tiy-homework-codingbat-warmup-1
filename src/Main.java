@@ -10,6 +10,5 @@ public class Main {
         System.out.println( kata.sleepIn(true, false));
         System.out.println( kata.sleepIn(false, true));
 
-        System.out.println( pie.length() );
     }
 }

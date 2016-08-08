@@ -121,12 +121,15 @@ public class Kata {
 
     public String missingChar(String str, int n) {
 
+        // checks to see if the word is longer than n as long as it is it will run
         if(str.length() >= n) {
-            String front = str.substring(0, n);
-            String back = str.substring(n + 1);
+            String front = str.substring(0, n);     // sets the front variable to the first letters stopping before n
+            String back = str.substring(n + 1);     // sets the back variable to the letters starting at n + 1 and going to the end of the string
 
             return front + back;
         } else {
+
+            // will simply return the str if n is longer than str since there's nothing to remove
             return str;
         }
     }
@@ -134,14 +137,86 @@ public class Kata {
     public String frontBack(String str) {
 
         // checks the length to see if it's one character (0 or 1)
-        if(str.length() <= 1) return str;
+        if(str.length() <= 1) {
+            return str;
 
-        // sets the middle of the string to a mid String
-        String mid = str.substring(1, str.length()-1);
+        } else {
 
-        // returns the last character then the middle then the first character
-        return str.charAt(str.length()-1) + mid + str.charAt(0);
+            // sets the middle of the string to a mid String
+            String middle = str.substring(1, str.length()-1);
+
+            // returns the last character then the middle then the first character
+            return str.charAt(str.length()-1) + middle + str.charAt(0);
+        }
     }
+
+    // first three chars are repeated three times unless its less than 3 chars long
+
+    public String front3(String str) {
+        String firstThree;
+
+        if( str.length() >= 3) {
+            firstThree = str.substring(0, 3);
+
+        } else {
+            firstThree = str;
+        }
+
+        return firstThree + firstThree + firstThree;
+
+    }
+
+    // takes the last letter and adds it to the front and end of the string
+    public String backAround(String str) {
+        String lastLetter;
+
+        lastLetter = str.substring(str.length()-1);
+        return lastLetter + str + lastLetter;
+
+    }
+
+    // if its divisible by 3 or 5 with no remainder then it returns true
+
+    public boolean or35(int n) {
+        if(n % 5 == 0) {
+            return true;
+        } else if(n % 3 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    // takes the first two letters and displays them on the front and back of the string
+
+    public String front22(String str) {
+        String lastLetter;
+
+        //lastLetter = str.substring(str.length()-1); - no longer needed
+        //return lastLetter + str + lastLetter; - no longer needed
+
+        if(str.length() >= 2) {
+            lastLetter = str.substring(str.length()-1);
+            return lastLetter + str + lastLetter;
+        } else {
+            return str + str + str;
+        }
+    }
+
+    // returns true if the String starts with "hi"
+
+    public boolean startHi(String str) {
+
+        if(str.startsWith("hi")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    
+
 
     /*
 
